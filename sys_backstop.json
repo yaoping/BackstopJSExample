@@ -19,26 +19,19 @@
   ],
     "scenarios": [
       {
-        "label": "BackstopJS Homepage",
-        "url": "https://garris.github.io/BackstopJS/",
+        "label": "Search Homepage",
+        "url": "https://www.thoughtworks.com/",
         "hideSelectors": [],
         "removeSelectors": [],
         "selectorExpansion": true,
         "selectors": [
-          ".jumbotron",
-          ".row.firstPanel",
-          ".firstPanel .col-sm-4:nth-of-type(2)",
-          ".firstPanel .col-sm-4:nth-of-type(3)",
-          ".firstPanel .col-sm-4:nth-of-type(4)",
-          ".secondPanel",
-          ".finalWords",
-          "footer"
+          "document"
         ],
         "readyEvent": null,
         "delay": 500,
         "misMatchThreshold" : 0.1,
-        "onBeforeScript": "thoughtworks.js",
-        "onReadyScript": "thoughtworks.js"
+        "onBeforeScript": null,
+        "onReadyScript": "search.js"
       }
     ],
   "paths": {

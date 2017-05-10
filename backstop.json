@@ -33,7 +33,7 @@
       "misMatchThreshold": 0.1
     },
     {
-      "label": "QA search information",
+      "label": "client information",
       "url": "https://www.thoughtworks.com/",
       "hideSelectors": [],
       "removeSelectors": [],
@@ -46,6 +46,36 @@
       "misMatchThreshold": 0.1,
       "onBeforeScript": null,
       "onReadyScript": "onReady.js"
+    },
+    {
+      "label": "Contact information",
+      "url": "https://www.thoughtworks.com/",
+      "hideSelectors": [],
+      "removeSelectors": [],
+      "selectorExpansion": true,
+      "selectors": [
+        "document"
+      ],
+      "readyEvent": null,
+      "delay": 500,
+      "misMatchThreshold": 0.1,
+      "onBeforeScript": "onReady.js",
+      "onReadyScript": "contact.js"
+    },
+    {
+      "label": "Search QA information information",
+      "url": "https://www.thoughtworks.com/",
+      "hideSelectors": [],
+      "removeSelectors": [],
+      "selectorExpansion": true,
+      "selectors": [
+        "document"
+      ],
+      "readyEvent": null,
+      "delay": 500,
+      "misMatchThreshold": 0.1,
+      "onBeforeScript": null,
+      "onReadyScript": "search.js"
     }
   ],
   "paths": {
