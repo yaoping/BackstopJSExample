@@ -1,0 +1,15 @@
+{
+  "name": "backsopjs",
+  "version": "1.0.0",
+  "devDependencies": {
+    "mocha": "^1.21.5",
+    "chai": "^3.5.0",
+    "mochawesome": "^1.5.1"
+  },
+  "dependencies": {
+    "casperjs": "^1.1.0-beta5",
+    "gulp":"~3.9.1"
+  },
+  "author": "Pingping Yao",
+  "license": "MIT"
+}
