@@ -32,21 +32,6 @@
       "misMatchThreshold": 0.1,
       "onBeforeScript": null,
       "onReadyScript": "contact.js"
-    },
-    {
-      "label": "completed Contact information",
-      "url": "https://www.thoughtworks.com/contact-us",
-      "hideSelectors": [],
-      "removeSelectors": [],
-      "selectorExpansion": true,
-      "selectors": [
-        "document"
-      ],
-      "readyEvent": null,
-      "delay": 2000,
-      "misMatchThreshold": 0.1,
-      "onBeforeScript": null,
-      "onReadyScript": "basic.js"
     }
   ],
   "paths": {

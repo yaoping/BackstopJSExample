@@ -17,23 +17,67 @@
       "height": 768
     }
   ],
-    "scenarios": [
-      {
-        "label": "Search Homepage",
-        "url": "https://www.thoughtworks.com/",
-        "hideSelectors": [],
-        "removeSelectors": [],
-        "selectorExpansion": true,
-        "selectors": [
-          "document"
-        ],
-        "readyEvent": null,
-        "delay": 500,
-        "misMatchThreshold" : 0.1,
-        "onBeforeScript": null,
-        "onReadyScript": "search.js"
-      }
-    ],
+  "scenarios": [
+    {
+      "label": "Thoughtworks Homepage",
+      "url": "https://www.thoughtworks.com/",
+      "hideSelectors": [],
+      "removeSelectors": [],
+      "selectorExpansion": true,
+      "selectors": [
+        "#home-tile-201703-tech-radar",
+        "#home-tile-201703-battle-loyal"
+      ],
+      "readyEvent": null,
+      "delay": 500,
+      "misMatchThreshold": 0.1
+    },
+    {
+      "label": "client information",
+      "url": "https://www.thoughtworks.com/",
+      "hideSelectors": [],
+      "removeSelectors": [],
+      "selectorExpansion": true,
+      "selectors": [
+        "document"
+      ],
+      "readyEvent": null,
+      "delay": 500,
+      "misMatchThreshold": 0.1,
+      "onBeforeScript": null,
+      "onReadyScript": "onReady.js"
+    },
+    {
+      "label": "Contact information",
+      "url": "https://www.thoughtworks.com/",
+      "hideSelectors": [],
+      "removeSelectors": [],
+      "selectorExpansion": true,
+      "selectors": [
+        "document"
+      ],
+      "readyEvent": null,
+      "delay": 500,
+      "misMatchThreshold": 0.1,
+      "onBeforeScript": "onReady.js",
+      "onReadyScript": "contact.js"
+    },
+    {
+      "label": "Search QA information information",
+      "url": "https://www.thoughtworks.com/",
+      "hideSelectors": [],
+      "removeSelectors": [],
+      "selectorExpansion": true,
+      "selectors": [
+        "document"
+      ],
+      "readyEvent": null,
+      "delay": 50000,
+      "misMatchThreshold": 0.1,
+      "onBeforeScript": null,
+      "onReadyScript": "search.js"
+    }
+  ],
   "paths": {
     "bitmaps_reference": "backstop_data/bitmaps_reference",
     "bitmaps_test": "backstop_data/bitmaps_test",
@@ -43,6 +87,8 @@
   },
   "casperFlags": [],
   "engine": "phantomjs",
-  "report": ["browser"],
+  "report": [
+    "browser"
+  ],
   "debug": false
 }

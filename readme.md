@@ -45,3 +45,11 @@
      var cookies = JSON.stringify(casper.page.cookies, null, 2);
      fs.write(cookiePath, cookies, 'w');
    });
+   
+   
+   var index = 2; // the index to select, you may calculate the index programatically from the option value
+   this.evaluate(function(index) {
+       var sel = document.querySelector('form[name="security_page_toplevel_page_itsec_settings"] select[name="itsec_strong_passwords[roll]"]');
+       sel.selectedIndex = index;
+       sel.onchange();
+   }, index);
